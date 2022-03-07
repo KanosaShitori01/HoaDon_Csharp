@@ -1,0 +1,10 @@
+D:\Csharp_Exams\DataGVCsharp_DTT\DataGVCsharp_DTT\bin\Debug\DataGVCsharp_DTT.exe.config
+D:\Csharp_Exams\DataGVCsharp_DTT\DataGVCsharp_DTT\bin\Debug\DataGVCsharp_DTT.exe
+D:\Csharp_Exams\DataGVCsharp_DTT\DataGVCsharp_DTT\bin\Debug\DataGVCsharp_DTT.pdb
+D:\Csharp_Exams\DataGVCsharp_DTT\DataGVCsharp_DTT\obj\Debug\DataGVCsharp_DTT.csprojResolveAssemblyReference.cache
+D:\Csharp_Exams\DataGVCsharp_DTT\DataGVCsharp_DTT\obj\Debug\DataGVCsharp_DTT.Form1.resources
+D:\Csharp_Exams\DataGVCsharp_DTT\DataGVCsharp_DTT\obj\Debug\DataGVCsharp_DTT.Form2.resources
+D:\Csharp_Exams\DataGVCsharp_DTT\DataGVCsharp_DTT\obj\Debug\DataGVCsharp_DTT.Properties.Resources.resources
+D:\Csharp_Exams\DataGVCsharp_DTT\DataGVCsharp_DTT\obj\Debug\DataGVCsharp_DTT.csproj.GenerateResource.Cache
+D:\Csharp_Exams\DataGVCsharp_DTT\DataGVCsharp_DTT\obj\Debug\DataGVCsharp_DTT.exe
+D:\Csharp_Exams\DataGVCsharp_DTT\DataGVCsharp_DTT\obj\Debug\DataGVCsharp_DTT.pdb
