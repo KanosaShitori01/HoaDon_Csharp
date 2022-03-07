@@ -13,6 +13,7 @@ namespace DataGVCsharp_DTT
     public partial class Form2 : Form
     {
         SqlConnection conn = new SqlConnection(@"Server=.;Database=QL_HOA_DON;Integrated Security=true");
+        BindingSource bs;
         public Form2()
         {
             InitializeComponent();
@@ -30,7 +31,17 @@ namespace DataGVCsharp_DTT
                 tsl += Convert.ToInt32(dataGV.Rows[i].Cells["SOLUONG"].Value);
             }
             txt_tsl.Text = tsl.ToString();
-            txt_tssp.Text = (dataGV.RowCount - 1).ToString();
+            string query = String.Format("SELECT COUNT(MASP) FROM CTHOADON WHERE MAHD='{0}'", cb_mahd.Text);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            int tt = 0;
+            cmd.Connection.Open();
+            tt = Convert.ToInt32(cmd.ExecuteScalar());
+            txt_tssp.Text = tt.ToString();
+            conn.Close();
+        }
+        private void SyncBSource(object dt)
+        {
+           
         }
         private void gridDataFlow()
         {
@@ -47,7 +58,10 @@ namespace DataGVCsharp_DTT
             SqlDataAdapter adap = new SqlDataAdapter("SELECT * FROM HOADON", conn);
             DataTable dt = new DataTable();
             adap.Fill(dt);
-            cb_mahd.DataSource = dt;
+            bs = new BindingSource();
+            bs.DataSource = dt;
+            bindNavigator.BindingSource = bs;
+            cb_mahd.DataSource = bs;
             cb_mahd.DisplayMember = "MAHD";
             cb_mahd.ValueMember = "MAHD";
             gridDataFlow();
@@ -63,6 +77,21 @@ namespace DataGVCsharp_DTT
         }
 
         private void txt_tssp_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void bindingNavigatorMoveNextItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_gxcsdl_Click(object sender, EventArgs e)
         {
 
         }
